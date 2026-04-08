@@ -1,0 +1,101 @@
+{% extends "base.html" %}
+
+{% block title %}Entertainment | JO-EN Media{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='entertainment.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="container" id="content">
+    <section class="section-block">
+        <div class="section-heading">
+            <p class="section-label">What We Build</p>
+            <h2 class="section-title-main">
+                Entertainment <span class="accent-glow">Ecosystem</span>
+            </h2>
+            <p class="section-intro">
+                From content creation to talent development, JO-EN creates an ecosystem
+                where entertainment and digital influence work together.
+            </p>
+        </div>
+
+    <div class="ent-showcase">
+        <div class="ent-showcase-image">
+            <img src="{{ url_for('static', filename='images/studio.jpg') }}" alt="Entertainment showcase">
+        </div>
+
+        <div class="ent-showcase-overlay">
+            <span class="showcase-tag">Entertainment Focus</span>
+            <h3>Content, Talent, and Influence in One Ecosystem</h3>
+            <p>
+                We connect short video, livestream formats, talent incubation, and brand collaboration
+                into one entertainment strategy that helps creators grow and helps brands engage audiences.
+            </p>
+
+            <div class="showcase-points">
+                <span>Short Video Content</span>
+                <span>Livestream Entertainment</span>
+                <span>Talent Incubation</span>
+                <span>Brand Collaboration</span>
+            </div>
+        </div>
+    </div>
+
+        
+
+            
+        </div>
+    </section>
+</div>
+
+<div class="container">
+    <section class="highlight-panel">
+        <div class="section-heading center-heading">
+            <p class="section-label">JO-EN Advantage</p>
+            <h2 class="section-title-main">
+                Content × Talent × <span class="accent-glow">Influence</span>
+            </h2>
+            <p class="section-intro center-sub">
+                We combine creator development, local market understanding, and entertainment strategy
+                to build sustainable digital growth.
+            </p>
+        </div>
+    </section>
+</div>
+
+
+
+<div class="container">
+    <section class="section-block">
+        <div class="section-heading">
+            <p class="section-label">How We Work</p>
+            <h2 class="section-title-main">
+                Growth Through <span class="accent-glow">Entertainment</span>
+            </h2>
+        </div>
+
+        <div class="simple-steps">
+            <div class="step-card">
+                <span class="step-number">01</span>
+                <h3>Discover</h3>
+                <p>Identify creators, content opportunities, and audience directions.</p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">02</span>
+                <h3>Develop</h3>
+                <p>Support talents with creative planning, content structure, and positioning.</p>
+            </div>
+
+            <div class="step-card">
+                <span class="step-number">03</span>
+                <h3>Grow</h3>
+                <p>Expand visibility, strengthen audience loyalty, and unlock collaboration value.</p>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}

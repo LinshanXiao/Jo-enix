@@ -1,0 +1,112 @@
+/* ===== 页面整体 ===== */
+.ip-page {
+    background: #000;
+    color: #fff;
+    padding: 80px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ===== section ===== */
+.ip-section {
+    margin-bottom: 120px;
+}
+
+.ip-section.dark {
+    background: #050505;
+    padding: 60px 0;
+}
+
+/* ===== 容器 ===== */
+.ip-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+/* ===== 左侧 ===== */
+.ip-left {
+    flex: 1;
+}
+
+/* ===== 标题 ===== */
+.ip-title {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.ip-line {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #ff4ecd, #7a5cff);
+    margin-bottom: 30px;
+}
+
+/* ===== 内容卡片 ===== */
+.ip-card {
+    padding: 20px 25px;
+    border-radius: 12px;
+    color: #ccc;
+    line-height: 1.8;
+
+    border: 2px solid transparent;
+    background: 
+        linear-gradient(#000, #000) padding-box,
+        linear-gradient(90deg, #ff4ecd, #7a5cff) border-box;
+}
+
+/* ===== 右侧图片 ===== */
+.ip-right img {
+    width: 500px;
+    max-width: 100%;
+}
+
+/* ===== 游戏 grid ===== */
+.ip-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* ===== 单个游戏 ===== */
+.game-item {
+    text-align: center;
+}
+
+.game-item img {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+.game-item img:hover {
+    transform: scale(1.1);
+}
+
+.game-item span {
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ===== 响应式 ===== */
+@media (max-width: 900px) {
+
+    .ip-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .ip-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ip-right img {
+        width: 100%;
+    }
+}

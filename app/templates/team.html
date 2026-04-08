@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Team | JO-EN Media{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='team.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="team-section">
+    <div class="container">
+
+        <div class="team-hero">
+            <div class="team-copy">
+                <p class="section-label">Who We Are</p>
+                <h1>Core Team <span>Background</span></h1>
+
+                <p class="team-lead">
+                    Our core team comes from diverse industries including media, consulting, and brand marketing, bringing extensive cross-industry experience and a global perspective.
+                </p>
+
+                <p>
+                    Team members have previously worked at leading international companies, contributing strong execution capabilities and innovative thinking to every project. We are committed to delivering high-quality branding and content ecosystems.
+                </p>
+
+                <div class="highlight-card">
+                    <span class="highlight-line"></span>
+                    <p>At JO-EN Media, we combine expertise and creativity to drive sustainable growth.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="logo-showcase">
+            <div class="logo-header">
+                <p class="section-label">Industry Experience</p>
+                <h2>Companies Our Team Has Worked With</h2>
+            </div>
+
+            <div class="company-logos">
+                <div class="logo-item">
+                    <img src="{{ url_for('static', filename='images/newclassics.jpg') }}" alt="New Classics Media">
+                </div>
+                <div class="logo-item">
+                    <img src="{{ url_for('static', filename='images/accenture.jpg') }}" alt="Accenture">
+                </div>
+                <div class="logo-item">
+                    <img src="{{ url_for('static', filename='images/ho.jpg') }}" alt="HO Communication">
+                </div>
+                <div class="logo-item">
+                    <img src="{{ url_for('static', filename='images/publics.jpg') }}" alt="Publicis Media">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="recruit-section">
+    <div class="container">
+
+        <div class="recruit-header">
+            <p class="section-label">Join JO-EN</p>
+            <h2>Build With Us</h2>
+            <p class="recruit-sub">
+                We are looking for creative, strategic, and digitally minded talent to grow together with our cross-border media ecosystem.
+            </p>
+        </div>
+
+        <div class="jobs">
+            <div class="job-card">
+                <div class="job-tag">Content</div>
+                <h3>Content Creator</h3>
+                <p>Responsible for content planning and creation to enhance brand visibility and audience engagement.</p>
+            </div>
+
+            <div class="job-card">
+                <div class="job-tag">Marketing</div>
+                <h3>Marketing Specialist</h3>
+                <p>Develop and execute marketing strategies to drive brand growth and campaign performance.</p>
+            </div>
+
+            <div class="job-card">
+                <div class="job-tag">Tech</div>
+                <h3>Frontend Developer</h3>
+                <p>Responsible for website development and user experience optimization.</p>
+            </div>
+        </div>
+
+        <div class="apply-box">
+            <p class="apply-label">Apply Now</p>
+            <a href="mailto:hr@jo-enmedia.com">info@jo-enmedia.com</a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

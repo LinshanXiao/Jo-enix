@@ -1,0 +1,349 @@
+:root {
+    --accent-gradient: linear-gradient(90deg, #ff4ecd, #7a5cff);
+}
+
+/* ===== Cases Page ===== */
+.cases-hero,
+.case-section {
+    background: #000;
+    color: #fff;
+}
+
+/* ===== HERO ===== */
+.cases-hero {
+    padding: 120px 8% 80px;
+    border-bottom: 1px solid rgba(255, 78, 205, 0.15);
+}
+
+.cases-hero-inner {
+    max-width: 900px;
+}
+
+.cases-label {
+    width: 110px;
+    height: 6px;
+    background: var(--accent-gradient);
+    margin-bottom: 28px;
+    border-radius: 999px;
+}
+
+.cases-hero h1 {
+    font-size: clamp(2.8rem, 6vw, 5.4rem);
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 24px;
+    letter-spacing: -0.03em;
+}
+
+.cases-hero p {
+    max-width: 760px;
+    font-size: 1.08rem;
+    line-height: 1.9;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+/* ===== Section ===== */
+.case-section {
+    padding: 90px 8%;
+}
+
+.alt-section {
+    background: linear-gradient(to bottom, #030303 0%, #070707 100%);
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 40px;
+    margin-bottom: 45px;
+    flex-wrap: wrap;
+}
+
+/* 渐变标题编号 */
+.section-tag {
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.section-heading h2 {
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-top: 10px;
+    margin-bottom: 0;
+    letter-spacing: -0.03em;
+}
+
+.section-heading p {
+    max-width: 560px;
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+/* ===== Grid ===== */
+.case-grid {
+    display: grid;
+    gap: 28px;
+    margin-bottom: 40px;
+}
+
+/* ===== Single Image Layout ===== */
+.single-column {
+    grid-template-columns: 1fr;
+}
+
+.two-column {
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.three-column {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* ===== Cards ===== */
+.case-card {
+    border-radius: 24px;
+    overflow: hidden;
+
+    /* 渐变边框 */
+    border: 1px solid transparent;
+    background:
+        linear-gradient(#0b0b0b, #0b0b0b) padding-box,
+        var(--accent-gradient) border-box;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transition: all 0.3s ease;
+}
+
+/* hover 微发光 */
+.case-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(255, 78, 205, 0.15);
+}
+
+.large-card {
+    min-height: 460px;
+}
+
+.image-card img {
+    width: 100%;
+    height: 380px;   /* clean fixed height */
+    object-fit: cover;
+    display: block;
+}
+
+.text-card {
+    padding: 36px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* 小标签渐变 */
+.brand-mini {
+    display: inline-block;
+    margin-bottom: 16px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.text-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.text-card ul {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.text-card li {
+    margin-bottom: 14px;
+    color: rgba(255, 255, 255, 0.82);
+    line-height: 1.7;
+}
+
+.card-caption {
+    padding: 24px;
+}
+
+.card-caption h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.card-caption p {
+    color: rgba(255, 255, 255, 0.72);
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ===== Process Row ===== */
+.process-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.process-card {
+    border-radius: 24px;
+    padding: 28px 24px;
+    position: relative;
+    min-height: 220px;
+
+    /* 渐变边框 */
+    border: 2px solid transparent;
+    background:
+        linear-gradient(#090909, #090909) padding-box,
+        var(--accent-gradient) border-box;
+}
+
+.process-card span {
+    position: absolute;
+    top: -18px;
+    left: 24px;
+    width: 44px;
+    height: 44px;
+    background: var(--accent-gradient);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+}
+
+.process-card h4 {
+    margin-top: 24px;
+    margin-bottom: 14px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.process-card p {
+    color: rgba(255, 255, 255, 0.76);
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* ===== Metrics ===== */
+.metrics-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 38px;
+}
+
+.metric-box {
+    border-radius: 22px;
+    padding: 30px 24px;
+    text-align: center;
+
+    border: 1px solid rgba(255, 78, 205, 0.2);
+    background: #070707;
+}
+
+.metric-box h3 {
+    font-size: clamp(2.2rem, 4vw, 4rem);
+    font-weight: 800;
+    margin-bottom: 8px;
+    letter-spacing: -0.03em;
+
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.metric-box p {
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* ===== Logo Wall (Single Image Version) ===== */
+.logo-wall {
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+
+    /* 和你整体风格统一 */
+    border: 1px solid rgba(255, 78, 205, 0.2);
+    background: #050505;
+
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+.logo-wall img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.logo-wall:hover img {
+    transform: scale(1.03);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 1100px) {
+    .two-column,
+    .three-column,
+    .process-row,
+    .metrics-row,
+    .logo-wall {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .cases-hero {
+        padding: 100px 6% 70px;
+    }
+
+    .case-section {
+        padding: 70px 6%;
+    }
+
+    .two-column,
+    .three-column,
+    .process-row,
+    .metrics-row,
+    .logo-wall {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading {
+        align-items: flex-start;
+    }
+
+    .large-card {
+        min-height: auto;
+    }
+
+    .text-card {
+        padding: 28px 22px;
+    }
+}
+@media (max-width: 768px) {
+    .image-card img {
+        height: 240px;
+    }
+}

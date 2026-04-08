@@ -1,0 +1,222 @@
+{% extends "base.html" %}
+
+{% block title %}E-commerce{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='ecommerce.css') }}">
+{% endblock %}
+
+{% block content %}
+
+    <!-- ===== Hero ===== -->
+    <div class="container">
+        <section class="ecom-hero">
+            <div class="ecom-hero-text">
+                <div class="eyebrow">E-commerce Division</div>
+                <h1>
+                    Global <span class="accent-glow">E-commerce</span> Solutions
+                </h1>
+                <p class="hero-desc">
+                    JO-EN empowers Asia-Pacific brands with integrated cross-border e-commerce solutions.
+                    Through TikTok Shop operations, platform ecosystems, and localized supply chains,
+                    we enable brands to scale globally with efficiency, speed, and impact.
+                </p>
+
+                <div class="hero-btns">
+                    <a href="#services" class="btn btn-primary">Explore Services</a>
+                    
+                </div>
+            </div>
+
+            <div class="hero-side-cards">
+                <div class="info-card">
+                    <div class="info-label">Core Strength</div>
+                    <div class="info-title">TikTok Shop Operations</div>
+                    <p>Localized channel strategy and creator-led commerce execution.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-label">Coverage</div>
+                    <div class="info-title">Multi-market Expansion</div>
+                    <p>Supporting Australia and wider Asia-Pacific market growth.</p>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-label">Capability</div>
+                    <div class="info-title">End-to-End Fulfillment</div>
+                    <p>From product onboarding to operations, fulfillment, and scaling.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== Industry Challenges ===== -->
+    <div class="container">
+        <section class="section-block">
+            <div class="section-heading-wrap">
+                <div class="section-kicker">Market Insight</div>
+                <h2 class="section-title-left">
+                    Industry <span class="accent-glow">Challenges</span>
+                </h2>
+            </div>
+
+            <div class="insight-grid">
+                <div class="glass-card">
+                    <h3>Operational Pressure</h3>
+                    <ul class="clean-list">
+                        <li>Rising digital channel costs</li>
+                        <li>Increasing competition across e-commerce platforms</li>
+                        <li>High cost of cross-border expansion</li>
+                        <li>Difficulty scaling traditional marketing models</li>
+                    </ul>
+                </div>
+
+                <div class="glass-card">
+                    <h3>Market Opportunities</h3>
+                    <ul class="clean-list">
+                        <li>Rapid growth in Asia-Pacific digital commerce</li>
+                        <li>Manufacturing advantages in emerging markets</li>
+                        <li>Growing influence of Gen-Z consumption</li>
+                        <li>Strong potential of fan-driven commerce ecosystems</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== Platform Ecosystem ===== -->
+    <div class="container" id="platform">
+        <section class="section-block">
+            <div class="section-heading-wrap">
+                <div class="section-kicker">Commerce Matrix</div>
+                <h2 class="section-title-left">
+                    Platform <span class="accent-glow">Ecosystem</span>
+                </h2>
+                <p class="section-sub-left">
+                    Multi-category commerce capabilities supported by unified backend resources,
+                    localized operations, and scalable cross-border supply chains.
+                </p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚗</div>
+                    <h3>Automotive Ecosystem</h3>
+                    <p>Automotive parts, accessories, and ecosystem services supported by a global supply chain network.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🛍️</div>
+                    <h3>Lifestyle Products</h3>
+                    <p>Precision product selection and community-based e-commerce operations targeting lifestyle markets.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">💄</div>
+                    <h3>Beauty & Personal Care</h3>
+                    <p>Beauty category operations powered by content-driven growth and brand-led commerce strategies.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Multi-category Platform</h3>
+                    <p>Integrated storefronts with unified backend supply chain and localized fulfillment capabilities.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== Core Services ===== -->
+    <div class="container" id="services">
+        <section class="section-block">
+            <div class="section-heading-wrap">
+                <div class="section-kicker">What We Do</div>
+                <h2 class="section-title-left">
+                    Core <span class="accent-glow">Services</span>
+                </h2>
+            </div>
+
+            <div class="service-grid-pro">
+                <div class="service-card-pro">
+                    <h4>Strategic Consulting</h4>
+                    <p>Brand strategy, digital transformation, channel planning, and cross-border market entry support.</p>
+                </div>
+
+                <div class="service-card-pro">
+                    <h4>Experience Marketing</h4>
+                    <p>Creative campaigns, interactive storytelling, and content strategies designed for conversion.</p>
+                </div>
+
+                <div class="service-card-pro">
+                    <h4>Omnichannel Commerce</h4>
+                    <p>Platform commerce, livestream commerce, private traffic operations, and branded digital channels.</p>
+                </div>
+
+                <div class="service-card-pro">
+                    <h4>Operational Support</h4>
+                    <p>Content outsourcing, customer service support, workflow coordination, and large-scale execution.</p>
+                </div>
+
+                <div class="service-card-pro">
+                    <h4>Business Innovation</h4>
+                    <p>New market incubation, product innovation, and scalable commerce models for long-term growth.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- ===== Why JO-EN ===== -->
+    <div class="container">
+        <section class="value-band">
+            <div class="section-heading-wrap center">
+                <div class="section-kicker">Why JO-EN</div>
+                <h2 class="section-title">
+                    Brand × Traffic × <span class="accent-glow">Fulfillment</span>
+                </h2>
+            </div>
+
+            <div class="value-grid-pro">
+                <div class="value-card">
+                    <span class="value-icon">📣</span>
+                    <h3>Traffic × Commerce</h3>
+                    <p>Creator ecosystems and digital channel strategies convert attention into purchasing power.</p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-icon">📈</span>
+                    <h3>Brand × Sales Integration</h3>
+                    <p>Content-driven commerce connects brand storytelling with measurable conversion performance.</p>
+                </div>
+
+                <div class="value-card">
+                    <span class="value-icon">⚙️</span>
+                    <h3>End-to-End Fulfillment</h3>
+                    <p>From sourcing and onboarding to localized execution, logistics, and long-term market expansion.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    
+
+    <!-- ===== CTA ===== -->
+    <div class="container">
+        <section class="cta-panel">
+            <div class="cta-copy">
+                <div class="section-kicker">Let’s Build Together</div>
+                <h2>Scale Your Brand with <span class="accent-glow">JO-EN</span></h2>
+                <p>
+                    Partner with JO-EN to expand across Asia-Pacific markets through
+                    integrated e-commerce strategy, localized operations, and creator-driven growth.
+                </p>
+            </div>
+
+            <div class="cta-action">
+                <a href="{{ url_for('contact') }}" class="btn btn-primary">Start Collaboration</a>
+            </div>
+        </section>
+    </div>
+
+    
+
+{% endblock %}

@@ -1,0 +1,262 @@
+/* ===== Shared Label ===== */
+
+.section-label {
+  display: inline-block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #d8d8e2;
+  letter-spacing: 0.04em;
+  margin-bottom: 14px;
+}
+
+/* ===== Team Hero ===== */
+
+.team-section {
+  padding: 90px 0 40px;
+}
+
+.team-hero {
+  padding: 30px 0 20px;
+}
+
+.team-copy {
+  max-width: 1100px;
+}
+
+.team-copy h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  line-height: 1.02;
+  font-weight: 800;
+  margin: 0 0 28px;
+  letter-spacing: -0.03em;
+  color: #f5f5f7;
+}
+
+.team-copy h1 span {
+  color: #ec4899;
+}
+
+.team-copy p {
+  max-width: 1200px;
+  font-size: 1.28rem;
+  line-height: 1.75;
+  color: #cfcfd8;
+  margin: 0 0 22px;
+}
+
+.team-copy .team-lead {
+  font-size: 1.4rem;
+  color: #f0f0f5;
+  max-width: 1250px;
+}
+
+.highlight-card {
+  margin-top: 34px;
+  padding: 24px 28px;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.highlight-line {
+  width: 4px;
+  height: 54px;
+  border-radius: 999px;
+  background: linear-gradient(180deg, #ec4899, #8b5cf6);
+  flex-shrink: 0;
+}
+
+.highlight-card p {
+  margin: 0;
+  font-size: 1.18rem;
+  line-height: 1.7;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* ===== Logo Showcase ===== */
+
+.logo-showcase {
+  margin-top: 70px;
+}
+
+.logo-header {
+  margin-bottom: 26px;
+}
+
+.logo-header h2 {
+  font-size: clamp(2rem, 3vw, 2.8rem);
+  line-height: 1.1;
+  margin: 0;
+  color: #f5f5f7;
+}
+
+.company-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.logo-item {
+  min-height: 170px;
+  padding: 28px;
+  border-radius: 28px;
+  background: white;
+  border: 1px solid rgba(255,255,255,0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.logo-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+}
+
+.logo-item img {
+  max-width: 100%;
+  max-height: 82px;
+  object-fit: contain;
+  display: block;
+}
+
+/* ===== Recruit Section ===== */
+
+.recruit-section {
+  padding: 80px 0 110px;
+}
+
+.recruit-header {
+  margin-bottom: 34px;
+  max-width: 920px;
+}
+
+.recruit-header h2 {
+  font-size: clamp(2.4rem, 4vw, 3.8rem);
+  line-height: 1.08;
+  margin: 0 0 18px;
+  color: #f5f5f7;
+}
+
+.recruit-sub {
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #bfbfd0;
+  margin: 0;
+}
+
+.jobs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.job-card {
+  padding: 30px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #0f0f17, #141421);
+  border: 1px solid rgba(255,255,255,0.07);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(236,72,153,0.28);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.22);
+}
+
+.job-tag {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(236,72,153,0.10);
+  color: #f3b4d3;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+}
+
+.job-card h3 {
+  font-size: 1.45rem;
+  margin: 0 0 14px;
+  color: #f5f5f7;
+}
+
+.job-card p {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #c9c9d6;
+  margin: 0;
+}
+
+.apply-box {
+  margin-top: 34px;
+  padding: 26px 30px;
+  border-radius: 24px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.apply-label {
+  font-size: 0.95rem;
+  color: #bdbdd0;
+  margin: 0 0 10px;
+}
+
+.apply-box a {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.apply-box a:hover {
+  color: #ec4899;
+}
+
+/* ===== Responsive ===== */
+
+@media (max-width: 1100px) {
+  .company-logos,
+  .jobs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-section {
+    padding: 70px 0 20px;
+  }
+
+  .team-copy p,
+  .team-copy .team-lead {
+    font-size: 1.05rem;
+  }
+
+  .highlight-card {
+    padding: 20px;
+    border-radius: 20px;
+    align-items: flex-start;
+  }
+
+  .company-logos,
+  .jobs {
+    grid-template-columns: 1fr;
+  }
+
+  .logo-item,
+  .job-card,
+  .apply-box {
+    border-radius: 22px;
+  }
+
+  .apply-box a {
+    font-size: 1.2rem;
+    word-break: break-word;
+  }
+}

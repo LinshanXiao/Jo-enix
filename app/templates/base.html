@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} JO-EN Media · E-commerce & Entertainment Ecosystem{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='base.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+
+<div class="container">
+    <div class="navbar">
+        <a href="{{ url_for('home') }}" class="logo">
+            <img src="{{ url_for('static', filename='images/joen.png') }}" alt="JO-EN Media Logo">
+        </a>
+        <div class="nav-links">
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('ecommerce') }}">E-commerce</a>
+            <a href="{{ url_for('entertainment') }}">Entertainment</a>
+            <a href="{{ url_for('ip') }}">IP Resources</a>
+            <a href="{{ url_for('cases') }}">Cases</a>
+            <a href="{{ url_for('team') }}">Our Teams</a>
+        </div>
+        <a href="{{ url_for('contact') }}" class="btn btn-outline nav-cta">Contact us</a>
+    </div>
+</div>
+
+{% block content %}
+{% endblock %}
+
+<div class="container footer">
+    <div class="footer-links">
+        <a href="{{ url_for('home') }}" class="logo">
+            <img src="{{ url_for('static', filename='images/joen.png') }}" alt="JO-EN Media Logo">
+        </a>
+
+        <div style="display: flex; gap: 32px; flex-wrap: wrap;">
+            <a href="#" style="color: #ccc; text-decoration: none;">Brand Partnerships</a>
+            <a href="#" style="color: #ccc; text-decoration: none;">Talent Incubation</a>
+            <a href="#" style="color: #ccc; text-decoration: none;">Creator Account Management</a>
+            <a href="#" style="color: #ccc; text-decoration: none;">Audience Monetization</a>
+        </div>
+    </div>
+
+    <div class="copyright">
+        © 2026 JO-EN · Empowering the next generation of global brands<br>
+        Australia · Japan · South Korea · Vietnam · Malaysia
+    </div>
+</div>
+
+</body>
+</html>

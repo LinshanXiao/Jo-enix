@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}IP Resources{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='ip.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<div class="ip-page">
+
+    <!-- ===== Cross-Industry IP ===== -->
+    <section class="ip-section">
+        <div class="ip-container">
+
+            <div class="ip-left">
+                <h2 class="ip-title">Cross-Industry IP Resources</h2>
+                <div class="ip-line"></div>
+
+                <div class="ip-card">
+                    <p>
+                        Extensive IP portfolio including Toei Animation titles, Ultraman,
+                        Detective Conan, ROBBI, AYAYI, XingTong, Angry Birds,
+                        The Simpsons, Tom & Jerry, Paul Frank, Pancoat,
+                        Assassin’s Creed and more.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ip-right">
+                <img src="{{ url_for('static', filename='images/animate.png') }}" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== Gaming IP ===== -->
+    <section class="ip-section dark">
+        <div class="ip-container">
+
+            <div class="ip-left">
+                <h2 class="ip-title">Gaming IP Resources</h2>
+                <div class="ip-line"></div>
+
+                <div class="ip-card">
+                    <p>
+                        Deep collaborations with leading game publishers such as Tencent and NetEase,
+                        covering co-operations in joint campaigns, marketing promotion,
+                        and brand integrations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="ip-grid">
+
+                <div class="game-item">
+                    <img src="{{ url_for('static', filename='images/wzry.png') }}">
+                    <span>Honor of Kings</span>
+                </div>
+
+                <div class="game-item">
+                    <img src="{{ url_for('static', filename='images/hpjy.png') }}">
+                    <span>Game for Peace</span>
+                </div>
+
+                <div class="game-item">
+                    <img src="{{ url_for('static', filename='images/qqfc.png') }}">
+                    <span>QQ Speed</span>
+                </div>
+
+                <div class="game-item">
+                    <img src="{{ url_for('static', filename='images/mhxy.png') }}">
+                    <span>Fantasy Westward Journey</span>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ===== Media & Influencer IP ===== -->
+    <section class="ip-section">
+        <div class="ip-container">
+
+            <div class="ip-left">
+                <h2 class="ip-title">Media & Influencer IP Resources</h2>
+                <div class="ip-line"></div>
+
+                <div class="ip-card">
+                    <p>
+                        Access to top-tier influencers across Taobao, Douyin, Kuaishou,
+                        Bilibili, and Xiaohongshu. Supporting live commerce,
+                        brand promotion, and content-driven marketing collaborations.
+                    </p>
+                </div>
+            </div>
+
+            
+
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}

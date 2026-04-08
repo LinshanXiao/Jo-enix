@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+
+{% block title %}Past Cases | JO-EN Media{% endblock %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='cases.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="cases-hero">
+    <div class="cases-hero-inner">
+        <div class="cases-label"></div>
+        <h1>Past Cases</h1>
+        <p>
+            Selected campaign work across luxury, lifestyle, food delivery, and consumer brands.
+            From social activation to integrated content strategy, our past work reflects
+            creative execution with measurable audience engagement.
+        </p>
+    </div>
+</section>
+
+<section class="case-section">
+    <div class="section-heading">
+        <div>
+            <span class="section-tag">01</span>
+            <h2>Luxury Social Campaign</h2>
+        </div>
+        <p>
+            A social content activation project designed for a luxury beauty brand,
+            combining immersive storytelling, influencer participation, and multi-platform distribution.
+        </p>
+    </div>
+
+    <div class="case-grid two-column">
+        <div class="case-card image-card large-card">
+            <img src="{{ url_for('static', filename='images/case1.jpg') }}" alt="Luxury social campaign visual">
+        </div>
+
+        <div class="case-card text-card">
+            <div class="brand-mini">YSL Beauty</div>
+            <h3>Campaign Highlights</h3>
+            <ul>
+                <li>Built an immersive campaign narrative around exclusive brand content.</li>
+                <li>Invited celebrity and influencer voices to amplify audience attention.</li>
+                <li>Encouraged reposting and hashtag participation to expand visibility.</li>
+                <li>Converted premium content into broader social discussion and user interest.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="process-row">
+        <div class="process-card">
+            <span>1</span>
+            <h4>Influencer Seeding</h4>
+            <p>Invited selected personalities and creators to share themed content and spark initial discussion.</p>
+        </div>
+        <div class="process-card">
+            <span>2</span>
+            <h4>Media Collaboration</h4>
+            <p>Worked with media channels and repost networks to increase reach and content circulation.</p>
+        </div>
+        <div class="process-card">
+            <span>3</span>
+            <h4>Audience Conversion</h4>
+            <p>Turned premium branded content into shareable social material that attracted wider consumer attention.</p>
+        </div>
+    </div>
+</section>
+
+<section class="case-section alt-section">
+    <div class="section-heading">
+        <div>
+            <span class="section-tag">02</span>
+            <h2>Food Delivery Social Campaign</h2>
+        </div>
+        <p>
+            An interactive social campaign for a food delivery platform,
+            focused on playful creative format, integrated communication, and performance-led exposure.
+        </p>
+    </div>
+
+    <div class="metrics-row">
+        <div class="metric-box">
+            <h3>78K+</h3>
+            <p>Reads</p>
+        </div>
+        <div class="metric-box">
+            <h3>29%</h3>
+            <p>Open Rate</p>
+        </div>
+        <div class="metric-box">
+            <h3>55K+</h3>
+            <p>Official Social Exposure</p>
+        </div>
+    </div>
+
+    <div class="case-grid single-column">
+        <div class="case-card image-card">
+            <img src="{{ url_for('static', filename='images/case2.jpg') }}" alt="Food delivery social campaign">
+            <div class="card-caption">
+                <h4>Campaign Highlight</h4>
+                <p>
+                    Used playful visual storytelling, integrated distribution, and performance-led promotion
+                    to drive engagement and social exposure.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="case-section">
+    <div class="section-heading">
+        <div>
+            <span class="section-tag">03</span>
+            <h2>Other Brand Collaborations</h2>
+        </div>
+        <p>
+            Our experience also includes campaign support, content marketing,
+            and social activation for brands across beauty, FMCG, hospitality,
+            sports, retail, and lifestyle industries.
+        </p>
+    </div>
+
+    
+    <div class="logo-wall">
+        <img src="{{ url_for('static', filename='images/case3.jpg') }}" alt="Brand collaborations">
+    </div>
+    
+</section>
+{% endblock %}

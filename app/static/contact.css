@@ -1,0 +1,103 @@
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form-box {
+    padding: 40px;
+}
+
+
+.contact-section {
+    padding: 60px 20px;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* LEFT */
+.contact-form-box h1 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 12px;
+    
+    background: linear-gradient(135deg, #6c8cff, #4b6fff);
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(108,140,255,0.3);
+}
+
+/* RIGHT */
+.contact-info-box {
+    background: transparent;
+    padding: 0;
+    border: none;
+    color: #bbb;
+    margin-top: 60px;
+}
+
+.contact-info-box h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.contact-info-box strong {
+    color: #fff;
+}
+
+/*.contact-info-box p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+}* 可以加间隔如果需要/
+
+/* FLASH */
+.flash.success {
+    background: #e6f7ec;
+    color: green;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.flash.error {
+    background: #fdeaea;
+    color: red;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
