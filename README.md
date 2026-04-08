@@ -1,2 +1,2 @@
-# Jo-En-Media
+# Joenix
 creating a website for work
